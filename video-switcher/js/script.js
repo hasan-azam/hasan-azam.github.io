@@ -16,7 +16,7 @@ document.addEventListener("keypress", function(event) {
         
         video.srcObject = null;
 
-        video.src = "videos/2-flower.mp4"
+        video.src = "videos/2-flower.mov"
 
     }
 
