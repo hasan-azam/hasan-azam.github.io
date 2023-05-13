@@ -8,7 +8,7 @@ document.addEventListener("keypress", function(event) {
         
        video.srcObject = null;
 
-        video.src = "videos/crv-vid-final.mp4";
+        video.src = "videos/1-crv.mp4";
         video.play() 
 
     }
@@ -23,7 +23,7 @@ document.addEventListener("keypress", function(event) {
     if(event.keyCode == 51) {
         video.srcObject = null;
 
-        video.src = "videos/sample-20s.mp4"
+        video.src = "videos/3-jam.mp4"
     }
 
     if(event.keyCode == 52) {
