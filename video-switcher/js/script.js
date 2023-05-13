@@ -8,7 +8,7 @@ document.addEventListener("keypress", function(event) {
         
        video.srcObject = null;
 
-        video.src = "videos/sample-5s.mp4";
+        video.src = "videos/crv-vid-final.mp4";
         video.play() 
 
     }
@@ -16,7 +16,7 @@ document.addEventListener("keypress", function(event) {
         
         video.srcObject = null;
 
-        video.src = "videos/The Land of Chocolate - Simpsons Clip.mp4"
+        video.src = "videos/flower-vid.mp4"
 
     }
 
