@@ -48,16 +48,52 @@ document.addEventListener("keypress", function(event) {
 
         video.srcObject = null;
 
-        video.src = "videos/3-go-again.mp4"
+        video.src = "videos/3-feature-film.mp4"
     }
 
-    if(event.keyCode == 52) { //Press 4
+    if(event.keyCode == 52) { //4 - Shadows Shadows
+        video.srcObject = null;
+
+        video.src = "videos/4-simpsons-vid.mp4"
+    }
+    if(event.keyCode == 53) { //5 - Starlight - Starlight Wash MV
+
+        video.srcObject = null;
+
+        video.src = "videos/5-starlight-wash.mp4"
+    }
+    if(event.keyCode == 54) { //6 - Idle Still 
+
         video.srcObject = null;
 
         video.src = "videos/4-simpsons-vid.mp4"
     }
 
-    if(event.keyCode == 53) {// Press 5 WEBCAM
+    if(event.keyCode == 55) { //7 - Go Again - lyric video
+
+        video.srcObject = null;
+
+        video.src = "videos/7-go-again.mp4"
+    }
+
+    if(event.keyCode == 56) { //8 - Like You- gradient shapes
+
+
+        video.srcObject = null;
+
+        video.src = "videos/4-simpsons-vid.mp4"
+    }
+
+    if(event.keyCode == 57) { //9 - Instant Crush?- spirited away 
+
+
+        video.srcObject = null;
+
+        video.src = "videos/9-spirited-away.mp4"
+    }
+
+
+    if(event.keyCode == 48) {// Press 0 WEBCAM
         window.navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
