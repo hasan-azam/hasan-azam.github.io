@@ -29,7 +29,7 @@ document.addEventListener("keypress", function(event) {
         
        video.srcObject = null;
 
-        video.src = "videos/1-intro.mp4";
+        video.src = "videos/boot-intro.mp4";
         video.play() 
 
     }
