@@ -8,16 +8,15 @@ var video = document.getElementById("myVideo");
 
 1 - Clementine Intro - booting up screen. “Loading Set…” 
 2 - CR-V - flickering CR-V Visual 
-3 - Feature Film - Christian Light Video
-4 - Shadows Shadows
-5 - Starlight - Starlight Wash MV
-6 - Idle Still - 
-7 - Go Again - lyric video
+3 - go again - lyric bud 
+4 - Feature Film - Christian Light Video
+5 - When You Were Young - music video
+6 - Shadows Shadows - christian vid
+7 - Idle Still - Spirited Away
 8 - Like You- gradient shapes
-9 - Instant Crush?- spirited away 
+9 - WDYM
 
 10 - WEBCAM
-
 
  */
 
@@ -29,7 +28,7 @@ document.addEventListener("keypress", function(event) {
         
        video.srcObject = null;
 
-        video.src = "videos/boot-intro.mp4";
+        video.src = "videos/1-boot-intro.mp4";
         video.play() 
 
     }
@@ -44,36 +43,41 @@ document.addEventListener("keypress", function(event) {
  
      }
     
-    if(event.keyCode == 51) { //3 - Feature Film - Christian Light Video
+    if(event.keyCode == 51) { //3 - go again - lyric bud 
+
 
         video.srcObject = null;
 
-        video.src = "videos/3-feature-film.mp4"
+        video.src = "videos/3-go-again.mp4"
     }
 
-    if(event.keyCode == 52) { //4 - Shadows Shadows
+    if(event.keyCode == 52) { //4 - Feature Film - Christian Light Video
+
         video.srcObject = null;
 
-        video.src = "videos/4-simpsons-vid.mp4"
+        video.src = "videos/4-feature-film.mp4"
     }
-    if(event.keyCode == 53) { //5 - Starlight - Starlight Wash MV
+    if(event.keyCode == 53) { //5 - When You Were Young - music video
+
 
         video.srcObject = null;
 
-        video.src = "videos/5-starlight-wash.mp4"
+        video.src = "videos/5-wwwy.mp4"
     }
-    if(event.keyCode == 54) { //6 - Idle Still 
+    if(event.keyCode == 54) { //6 - Shadows Shadows - christian vid
+
 
         video.srcObject = null;
 
-        video.src = "videos/4-simpsons-vid.mp4"
+        video.src = "videos/6-shadow.mp4"
     }
 
-    if(event.keyCode == 55) { //7 - Go Again - lyric video
+    if(event.keyCode == 55) { //7 - Idle Still - Spirited Away
+
 
         video.srcObject = null;
 
-        video.src = "videos/7-go-again.mp4"
+        video.src = "videos/7-idle-still.mp4"
     }
 
     if(event.keyCode == 56) { //8 - Like You- gradient shapes
@@ -81,7 +85,7 @@ document.addEventListener("keypress", function(event) {
 
         video.srcObject = null;
 
-        video.src = "videos/4-simpsons-vid.mp4"
+        video.src = "videos/8-like-you.mp4"
     }
 
     if(event.keyCode == 57) { //9 - Instant Crush?- spirited away 
@@ -89,7 +93,7 @@ document.addEventListener("keypress", function(event) {
 
         video.srcObject = null;
 
-        video.src = "videos/9-spirited-away.mp4"
+        video.src = "videos/5-wwwy.mp4"
     }
 
 
