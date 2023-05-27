@@ -105,5 +105,15 @@ document.addEventListener("keypress", function(event) {
         })
     }
    
+
+
+
+    if(event.keyCode == 189) { //MERCH - 
+
+
+        video.srcObject = null;
+
+        video.src = "videos/merch-vid.mp4"
+    }
   });
 
