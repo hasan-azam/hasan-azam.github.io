@@ -108,12 +108,21 @@ document.addEventListener("keypress", function(event) {
 
 
 
-    if(event.keyCode == 189) { //MERCH - 
+    if(event.keyCode == 109) { //MERCH - 
 
 
         video.srcObject = null;
 
         video.src = "videos/merch-vid.mp4"
     }
+
+    if(event.keyCode == 115) { //STATIC - 
+
+
+        video.srcObject = null;
+
+        video.src = "videos/static.mp4"
+    }
+
   });
 
