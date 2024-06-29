@@ -33,12 +33,12 @@ document.addEventListener("keypress", function(event) {
 
     }
 
-    if (event.keyCode == 50) { //2 - CR-V - flickering CR-V Visual 
+    if (event.keyCode == 50) { //2 - flower logo 
 
         
         video.srcObject = null;
  
-         video.src = "videos/2-crv.mp4";
+         video.src = "videos/flower-logo-animation.mp4";
          video.play() 
  
      }
