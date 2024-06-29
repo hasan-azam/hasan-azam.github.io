@@ -1,4 +1,3 @@
-
 // Get the video
 var video = document.getElementById("myVideo");
 
@@ -13,114 +12,98 @@ C - Camera
 2 - Sunsick Flower Logo 
 3 - Any Other Summer - Spirited Away
 
+4 - Sophie's Boyfriend Main - Lava Lamp
+5 - Sophie's Alt Visual
+
+6 - Feature Film - Christian Video
+
+7 - What She Says - Sungazer
+
+8- CR-V Main
+9 - CR-V Air Freshener
+
+Q - Like You 1
+W - Like You 2
 
  */
 
-
 document.addEventListener("keypress", function(event) {
-    if (event.keyCode == 49) { //1 - Clementine Intro - booting up screen. “Loading Set…” 
+    // Remove the gradient background when any key is pressed except '4'
+    if (event.keyCode != 52) {
+        document.body.classList.remove('gradient-background');
+    }
 
-
-        
-       video.srcObject = null;
-
+    if (event.keyCode == 49) { //1 - Clementine Intro - booting up screen. “Loading Set…”
+        video.srcObject = null;
         video.src = "videos/1-boot-intro.mp4";
-        video.play() 
-
+        video.play();
     }
 
     if (event.keyCode == 50) { //2 - flower logo 
-
-        
         video.srcObject = null;
- 
-         video.src = "videos/flower-logo-animation.mp4";
-         video.play() 
- 
-     }
+        video.src = "videos/flower-logo-animation.mp4";
+        video.play();
+    }
     
     if(event.keyCode == 51) { //3 - Any Other Summer - Spirited Away 
-
-
         video.srcObject = null;
-
-        video.src = "videos/3-go-again.mp4"
+        video.src = "videos/spirited-away.mp4";
     }
 
-    if(event.keyCode == 52) { //4 - Feature Film - Christian Light Video
-
+    if(event.keyCode == 52) { //4 - Sophie Main Visual - Lava Lamp
         video.srcObject = null;
-
-        video.src = "videos/4-feature-film.mp4"
-    }
-    if(event.keyCode == 53) { //5 - When You Were Young - music video
-
-
-        video.srcObject = null;
-
-        video.src = "videos/5-wwwy.mp4"
-    }
-    if(event.keyCode == 54) { //6 - Shadows Shadows - christian vid
-
-
-        video.srcObject = null;
-
-        video.src = "videos/6-shadow.mp4"
+        video.src = "videos/sophie-main-visual.mp4";
+        // Add the gradient background class to the body
+        document.body.classList.add('gradient-background');
     }
 
-    if(event.keyCode == 55) { //7 - Idle Still - Spirited Away
-
-
+    if(event.keyCode == 53) { //5 - Sophie Alt Visual
         video.srcObject = null;
-
-        video.src = "videos/7-idle-still.mp4"
+        video.src = "videos/sophie-alt-vid.mp4";
     }
 
-    if(event.keyCode == 56) { //8 - Like You- gradient shapes
-
-
+    if(event.keyCode == 54) { //6 - Feature Film - christian vid
         video.srcObject = null;
-
-        video.src = "videos/8-like-you.mp4"
+        video.src = "videos/4-feature-film.mp4";
     }
 
-    if(event.keyCode == 57) { //9 - Instant Crush?- spirited away 
-
-
+    if(event.keyCode == 55) { //7 - What She Says - Sungazer
         video.srcObject = null;
+        video.src = "videos/sungazer.mp4";
+    }
 
-        video.src = "videos/5-wwwy.mp4"
+    if(event.keyCode == 56) { //8 - CR-V - Main
+        video.srcObject = null;
+        video.src = "videos/2-crv.mp4";
+    }
+
+    if(event.keyCode == 57) { //9 - CR-V Air Freshener
+        video.srcObject = null;
+        video.src = "videos/CR-V Air Freshener.mp4";
     }
 
 
-    if(event.keyCode == 99) {// Press 0 WEBCAM
+    if(event.keyCode == 113) { //Q - Like You 1
+        video.srcObject = null;
+        video.src = "videos/8-like-you.mp4";
+    }
+
+
+    if(event.keyCode == 99) {// Press C WEBCAM
         window.navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
-           video.play()
-        })
+            video.play();
+        });
     }
-   
 
-
-
-    if(event.keyCode == 109) { //MERCH - 
-
-
+    if(event.keyCode == 109) { //MERCH
         video.srcObject = null;
-
-        video.src = "videos/merch-vid.mp4"
+        video.src = "videos/merch-vid.mp4";
     }
 
-    if(event.keyCode == 115) { //STATIC - 
-
-
+    if(event.keyCode == 115) { //STATIC
         video.srcObject = null;
-
-        video.src = "videos/static.mp4"
+        video.src = "videos/static.mp4";
     }
-
-    
-
-  });
-
+});

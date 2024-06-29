@@ -17,4 +17,22 @@
     padding: 20px;
   }
   
+  .gradient-background {
+    background: linear-gradient(220deg, #9978fc, #f08c3d, #f876aa, #df8be2, #e30a98);
+    background-size: 300% 300%;
+    animation: gradient-animation 5s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
   
