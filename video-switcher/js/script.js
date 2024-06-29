@@ -5,18 +5,14 @@ var video = document.getElementById("myVideo");
 // A key to know what does what
 /*
 
+S - Static
+M - Merch
+C - Camera
 
-1 - Clementine Intro - booting up screen. “Loading Set…” 
-2 - CR-V - flickering CR-V Visual 
-3 - go again - lyric bud 
-4 - Feature Film - Christian Light Video
-5 - When You Were Young - music video
-6 - Shadows Shadows - christian vid
-7 - Idle Still - Spirited Away
-8 - Like You- gradient shapes
-9 - WDYM
+1 - Sunsick Loading - booting up screen. “Loading Set…” 
+2 - Sunsick Flower Logo 
+3 - Any Other Summer - Spirited Away
 
-10 - WEBCAM
 
  */
 
@@ -43,7 +39,7 @@ document.addEventListener("keypress", function(event) {
  
      }
     
-    if(event.keyCode == 51) { //3 - go again - lyric bud 
+    if(event.keyCode == 51) { //3 - Any Other Summer - Spirited Away 
 
 
         video.srcObject = null;
@@ -97,7 +93,7 @@ document.addEventListener("keypress", function(event) {
     }
 
 
-    if(event.keyCode == 48) {// Press 0 WEBCAM
+    if(event.keyCode == 99) {// Press 0 WEBCAM
         window.navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
@@ -123,6 +119,8 @@ document.addEventListener("keypress", function(event) {
 
         video.src = "videos/static.mp4"
     }
+
+    
 
   });
 
