@@ -86,8 +86,14 @@ document.addEventListener("keypress", function(event) {
     if(event.keyCode == 113) { //Q - Like You 1
         video.srcObject = null;
         video.src = "videos/8-like-you.mp4";
+       //video.src = "videos\like-you-2.mp4";
+
     }
 
+    if(event.keyCode == 101) { //E - Like You 2
+        video.srcObject = null;
+        video.src = "videos\too-like-you.mp4";
+    }
 
     if(event.keyCode == 99) {// Press C WEBCAM
         window.navigator.mediaDevices.getUserMedia({ video: true })
